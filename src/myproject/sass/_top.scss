@@ -1,0 +1,22 @@
+#top{
+    background: #f8f8f8;
+    width: 100%;
+    height:40px;
+    .top-left{
+        float: left;
+        background: red;
+        height: 100%;
+        font-style: $font_color_top;
+        li{
+            float: left;  
+        }
+    }
+    .top-right{
+        float: right;
+        background: red;
+        height: 100%;
+        li{
+            float: left;  
+        }
+    }
+}
