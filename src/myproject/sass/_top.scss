@@ -2,21 +2,51 @@
     background: #f8f8f8;
     width: 100%;
     height:40px;
-    .top-left{
-        float: left;
-        background: red;
+    font-size:$font_size;
+    display: flex;
+    .top-center{
+        width: 1200px;
         height: 100%;
-        font-style: $font_color_top;
-        li{
-            float: left;  
+        margin:auto;
+        display: flex;
+        justify-content:space-between;
+        .top-left{
+            background: #f8f8f8;
+            height: 100%;
+            font-style: $font_color_top;
+            display: flex;
+            li{
+                float: left;
+                margin: auto;
+            }
+            li:nth-child(1){
+                margin-right: 25px;
+            }
+            li:nth-child(2){
+                margin-left: 13px;
+                margin-right: 20px;
+            }
+            a{
+                text-decoration: none;
+            }
         }
-    }
-    .top-right{
-        float: right;
-        background: red;
-        height: 100%;
-        li{
-            float: left;  
+        .top-right{
+            background: #f8f8f8;
+            height: 100%;
+            display: flex;
+            justify-content:flex-start;
+            li{
+                margin: auto;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            li:nth-child(2){
+                margin-left: 0;
+                margin-right: 50px;
+            }
+            a{
+                text-decoration: none;
+            }
         }
     }
 }

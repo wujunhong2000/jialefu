@@ -24,8 +24,17 @@ $fenlei_font_size:14px;
 $leixing_font_size:22px !important;
 /*top中的文字颜色*/
 $font_color_top:#004ea2 !important;
-/*居中*/
-$juzhong:0 auto;
+/*背景主题颜色*/
+$bg_color:#db3832;
+/*小字体颜色*/
+$small_font_color:#333;
+
+body{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items: center;
+}
 
 @import "top";
 @import "banner";

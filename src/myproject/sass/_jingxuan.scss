@@ -1,6 +1,59 @@
 #jingxuan{
     width:$main_width;
     height: 807px;
-    margin: $juzhong;
+    margin:auto;
     background:	#008080;
+    .jingxuan-top{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        p{
+            font-size:$leixing_font_size;
+        }
+    }
+    .jingxuan-list{
+        width: 100%;
+        height: 767px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        .jingxuan-list-1{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-bottom: 9px;
+            a:nth-child(1){
+                width: 796px;
+                height: 364px;
+                margin-right: 10px;
+            }
+            a:nth-child(2){
+                width: 394px;
+                height: 364px;
+                background: red;
+            }
+        }
+        .jingxuan-list-2{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            a:nth-child(1){
+                width: 394px;
+                height: 394px;
+                margin-right: 9px;
+            }
+            a:nth-child(2){
+                width: 394px;
+                height: 394px;
+                margin-right: 9px;
+            }
+            a:nth-child(3){
+                width: 394px;
+                height: 394px;
+            }
+        }
+    }
 }

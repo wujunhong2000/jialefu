@@ -1,6 +1,59 @@
 #banner{
     width:$main_width;
     height: 160px;
-    margin: $juzhong;
+    margin:auto;
     background:#40E0D0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+    }
+    .sousuo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            input{
+                width: 488px;
+                height: 46px;
+            }
+            button{
+                width: 110px;
+                height: 52px;
+                background-color: #db3832;
+                font-size: $fenlei_font_size;
+                color: #fff;
+                border-radius: 0px 2px 2px 0;
+                border: 2px solid #db3832;
+            }
+        }
+        p{
+            a{
+                margin-left: 14px;
+            }
+        }
+    }
+    .gouwuche{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        p{
+            font-size: $fenlei_font_size;
+        }
+        div{
+            width: 20px;
+            height: 15px;
+            background: red;
+            border-radius: 30%;
+        }
+    }
 }

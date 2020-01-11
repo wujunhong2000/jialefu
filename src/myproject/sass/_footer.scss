@@ -1,6 +1,72 @@
 #footer{
-    width:$main_width;
-    height:611px;
-    margin: $juzhong;
-    background:	#5F9EA0;
+    width:100%;
+    height:508px;
+    margin:auto;
+    background:	#f4f5f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .footer-main{
+        width: $main_width;
+        height: 274px;
+        margin: 35px 0 30px;
+        background: blue;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        ul{
+            width: 220px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            li{
+                width: 100%;
+                height: 30px;
+            }
+        }
+    }
+    .information{
+        width: $main_width;
+        height: 169px;
+        background: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        p:nth-child(1){
+            margin-bottom: 20px;
+            span{
+                margin: 0 10px;
+                color: $small_font_color;
+            }
+            a{
+                text-decoration: none;
+                color: $small_font_color;
+            }
+        }
+        p:nth-child(2),p:nth-child(3),p:nth-child(4){
+            span{
+                margin: 0 10px;
+                color: #bfbfbf;
+            }
+            a{
+                text-decoration: none;
+                color: #bfbfbf;
+            }
+        }
+        p:nth-child(5),p:nth-child(6){
+            margin: 0 10px;
+            color: #bfbfbf;
+        }
+    }
 }
