@@ -2,7 +2,6 @@
     width:$main_width;
     height: 160px;
     margin:auto;
-    background:#40E0D0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,16 +15,23 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         div{
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
-            input{
-                width: 488px;
+            margin-bottom: 10px;
+            position: relative;
+            .search{
+                width: 448px;
                 height: 46px;
+                border:2px solid #004ea2;
+                border-right: none;
+                font-size:18px;
+                outline: none;
+                padding-left: 40px;
             }
-            button{
+            .button{
                 width: 110px;
                 height: 52px;
                 background-color: #db3832;
@@ -33,11 +39,22 @@
                 color: #fff;
                 border-radius: 0px 2px 2px 0;
                 border: 2px solid #db3832;
+                cursor:pointer;
+                outline: none;
             }
         }
         p{
             a{
                 margin-left: 14px;
+                text-decoration: none;
+                font-size: 14px;
+                color: #666;
+            }
+            .sousuo-a-color{
+                color: $bg_color;
+            }
+            a:hover{
+                text-decoration: underline;
             }
         }
     }
@@ -46,8 +63,15 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+        span{
+            font-size: 30px;
+            color: #666;
+            margin-right: 10px;
+        }
         p{
             font-size: $fenlei_font_size;
+            font-size: 20px;
+            color: #666;
         }
         div{
             width: 20px;
