@@ -1,0 +1,1962 @@
+@charset "UTF-8";
+/* line 5, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*变量:宽高、文字大小、颜色*/
+/*多行注释css中可以显示*/
+/*选择器模块划分，嵌套不超过4层(&符号引用父属性)*/
+/*声明混合*/
+/*@mixin list-borderstyle ($style:solid,$width:1px,$color:red){
+    border: $style $width $color;
+}*/
+/*调用混合*/
+/*#top{
+    @include list-borderstyle;
+}*/
+/*普通的文字大小*/
+/*每一层盒子的宽度*/
+/*分类的文字大小*/
+/*类型的文字大小*/
+/*top中的文字颜色*/
+/*背景主题颜色*/
+/*小字体颜色*/
+/* line 32, ../sass/index1.scss */
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* line 1, ../sass/_yincan-top.scss */
+#yincan-top {
+  width: 100%;
+  height: 68px;
+  background: #005aaa;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: -68px;
+  z-index: 5;
+}
+/* line 12, ../sass/_yincan-top.scss */
+#yincan-top .yincan-top-main {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 19, ../sass/_yincan-top.scss */
+#yincan-top .yincan-top-main .yincan-top-search {
+  width: 690px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 26, ../sass/_yincan-top.scss */
+#yincan-top .yincan-top-main .yincan-top-search .yincan-top-input {
+  width: 580px;
+  height: 36px;
+  outline: none;
+  font-size: 16px;
+  text-indent: 15px;
+}
+/* line 33, ../sass/_yincan-top.scss */
+#yincan-top .yincan-top-main .yincan-top-search .yincan-top-input::-webkit-input-placeholder {
+  color: #666;
+}
+/* line 36, ../sass/_yincan-top.scss */
+#yincan-top .yincan-top-main .yincan-top-search .yincan-top-button {
+  width: 110px;
+  height: 42px;
+  background-color: #db3832;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 0px 2px 2px 0;
+  border: 2px solid #db3832;
+  cursor: pointer;
+  outline: none;
+}
+/* line 48, ../sass/_yincan-top.scss */
+#yincan-top .yincan-top-main .yincan-top-gouwuche {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 53, ../sass/_yincan-top.scss */
+#yincan-top .yincan-top-main .yincan-top-gouwuche span {
+  font-size: 30px;
+  color: #fff;
+  margin-right: 10px;
+}
+/* line 58, ../sass/_yincan-top.scss */
+#yincan-top .yincan-top-main .yincan-top-gouwuche p {
+  font-size: 14px;
+  font-size: 20px;
+  color: #fff;
+}
+/* line 63, ../sass/_yincan-top.scss */
+#yincan-top .yincan-top-main .yincan-top-gouwuche div {
+  width: 20px;
+  height: 15px;
+  background: red;
+  border-radius: 30%;
+}
+
+/* line 1, ../sass/_top.scss */
+#top {
+  background: #f8f8f8;
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+  display: flex;
+}
+/* line 7, ../sass/_top.scss */
+#top .top-center {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 13, ../sass/_top.scss */
+#top .top-center .top-left {
+  background: #f8f8f8;
+  height: 100%;
+  font-style: #004ea2 !important;
+  display: flex;
+}
+/* line 18, ../sass/_top.scss */
+#top .top-center .top-left li {
+  float: left;
+  margin: auto;
+}
+/* line 22, ../sass/_top.scss */
+#top .top-center .top-left li:nth-child(1) {
+  margin-right: 25px;
+}
+/* line 25, ../sass/_top.scss */
+#top .top-center .top-left li:nth-child(2) {
+  margin-left: 13px;
+  margin-right: 20px;
+}
+/* line 29, ../sass/_top.scss */
+#top .top-center .top-left a {
+  text-decoration: none;
+}
+/* line 33, ../sass/_top.scss */
+#top .top-center .top-right {
+  background: #f8f8f8;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+/* line 38, ../sass/_top.scss */
+#top .top-center .top-right li {
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* line 43, ../sass/_top.scss */
+#top .top-center .top-right li:nth-child(2) {
+  margin-left: 0;
+  margin-right: 50px;
+}
+/* line 47, ../sass/_top.scss */
+#top .top-center .top-right a {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/_banner.scss */
+#banner {
+  width: 1200px;
+  height: 160px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* line 8, ../sass/_banner.scss */
+#banner .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+/* line 14, ../sass/_banner.scss */
+#banner .sousuo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+/* line 19, ../sass/_banner.scss */
+#banner .sousuo div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  position: relative;
+}
+/* line 25, ../sass/_banner.scss */
+#banner .sousuo div .search {
+  width: 448px;
+  height: 46px;
+  border: 2px solid #004ea2;
+  border-right: none;
+  font-size: 18px;
+  outline: none;
+  padding-left: 40px;
+}
+/* line 34, ../sass/_banner.scss */
+#banner .sousuo div .button {
+  width: 110px;
+  height: 52px;
+  background-color: #db3832;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 0px 2px 2px 0;
+  border: 2px solid #db3832;
+  cursor: pointer;
+  outline: none;
+}
+/* line 47, ../sass/_banner.scss */
+#banner .sousuo p a {
+  margin-left: 14px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #666;
+}
+/* line 53, ../sass/_banner.scss */
+#banner .sousuo p .sousuo-a-color {
+  color: #db3832;
+}
+/* line 56, ../sass/_banner.scss */
+#banner .sousuo p a:hover {
+  text-decoration: underline;
+}
+/* line 61, ../sass/_banner.scss */
+#banner .gouwuche {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 66, ../sass/_banner.scss */
+#banner .gouwuche span {
+  font-size: 30px;
+  color: #666;
+  margin-right: 10px;
+}
+/* line 71, ../sass/_banner.scss */
+#banner .gouwuche p {
+  font-size: 14px;
+  font-size: 20px;
+  color: #666;
+}
+/* line 76, ../sass/_banner.scss */
+#banner .gouwuche div {
+  width: 20px;
+  height: 15px;
+  background: red;
+  border-radius: 30%;
+}
+
+/* line 1, ../sass/_fenlei.scss */
+#fenlei {
+  width: 1200px;
+  height: 38px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 8, ../sass/_fenlei.scss */
+#fenlei .fenlei-left {
+  width: 185px;
+  height: 38px;
+  padding-left: 15px;
+  background: #db3832;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+/* line 19, ../sass/_fenlei.scss */
+#fenlei .fenlei-left span {
+  position: absolute;
+  left: 30px;
+  color: #fff;
+  font-size: 20px;
+}
+/* line 25, ../sass/_fenlei.scss */
+#fenlei .fenlei-left p {
+  text-indent: -10px;
+}
+/* line 29, ../sass/_fenlei.scss */
+#fenlei .fenlei-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 34, ../sass/_fenlei.scss */
+#fenlei .fenlei-right li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* line 37, ../sass/_fenlei.scss */
+#fenlei .fenlei-right li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+/* line 43, ../sass/_fenlei.scss */
+#fenlei .fenlei-right li:nth-child(1) {
+  border-bottom: 2px solid #db3832;
+  padding-bottom: 3px;
+  margin-top: 5px;
+}
+/* line 47, ../sass/_fenlei.scss */
+#fenlei .fenlei-right li:nth-child(1) a {
+  color: #db3832;
+}
+/* line 51, ../sass/_fenlei.scss */
+#fenlei .fenlei-right .fenlei-right-font-color:hover {
+  color: #db3832;
+}
+
+/* line 1, ../sass/_menu.scss */
+#menu {
+  width: 1200px;
+  height: 524px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+/* line 7, ../sass/_menu.scss */
+#menu .menu-left {
+  /******************************** 菜单模块的左边区域 ************************/
+  width: 200px;
+  height: 524px;
+  background: #de4b46;
+  position: absolute;
+  z-index: 3;
+}
+/* line 13, ../sass/_menu.scss */
+#menu .menu-left .menu-left-type {
+  /****** 菜单模块左边区域的类目 *******/
+  width: 130px;
+  padding-left: 70px;
+  height: 46px;
+  background: #de4b46;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+/* line 23, ../sass/_menu.scss */
+#menu .menu-left .menu-left-type span {
+  color: #fff;
+  position: absolute;
+  left: 30px;
+  font-size: 20px;
+}
+/* line 29, ../sass/_menu.scss */
+#menu .menu-left .menu-left-type .menu-left-type-name {
+  /***** 每一个类目的名字 *****/
+  text-decoration: none;
+  color: #fff;
+}
+/* line 33, ../sass/_menu.scss */
+#menu .menu-left .menu-left-type .menu1-left-type-menu2 {
+  /***** 第一个类目下的二级菜单 *****/
+  width: 980px;
+  height: 524px;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  background: #fff;
+  box-shadow: 0 0 3px 1px #8a8989;
+  display: none;
+}
+/* line 43, ../sass/_menu.scss */
+#menu .menu-left .menu-left-type .menu1-left-type-menu2-left {
+  /**** 第一个类目下的二级菜单的左半区域 ****/
+  width: 490px;
+  height: 100%;
+  float: left;
+}
+/* line 48, ../sass/_menu.scss */
+#menu .menu-left .menu-left-type .menu1-left-type-menu2-left-type {
+  /*** 第一个类目下的二级菜单的左半区域的每一个类目 ***/
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+/* line 54, ../sass/_menu.scss */
+#menu .menu-left .menu-left-type .menu1-left-type-menu2-left-type > h5 {
+  /** 第一个类目下的二级菜单的左半区域的每一个类目的标题 **/
+  float: left;
+  width: 100px;
+}
+/* line 58, ../sass/_menu.scss */
+#menu .menu-left .menu-left-type .menu1-left-type-menu2-left-type > h5 > a {
+  /* 第一个类目下的二级菜单的左半区域的每一个类目的标题的a标签 */
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  float: right;
+}
+/* line 64, ../sass/_menu.scss */
+#menu .menu-left .menu-left-type .menu1-left-type-menu2-left-type > ul {
+  /** 第一个类目下的二级菜单的左半区域的每一个类目的细分 **/
+  float: left;
+  width: 350px;
+}
+/* line 68, ../sass/_menu.scss */
+#menu .menu-left .menu-left-type .menu1-left-type-menu2-left-type > ul > li {
+  /* 第一个类目下的二级菜单的左半区域的每一个类目的细分数目 */
+  float: left;
+  color: #666;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+/* line 74, ../sass/_menu.scss */
+#menu .menu-left .menu-left-type .menu1-left-type-menu2-left-type > ul > li > a {
+  /* 第一个类目下的二级菜单的左半区域的每一个类目的细分数目的a标签 */
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+}
+/* line 80, ../sass/_menu.scss */
+#menu .menu-left .menu-left-type:hover {
+  /****** 滑过菜单模块左边区域的类目 ******/
+  background: #fff;
+}
+/* line 83, ../sass/_menu.scss */
+#menu .menu-left .menu-left-type:hover .menu-left-type-name {
+  /****** 滑过菜单模块左边区域的类目改变每一个类目的名字的样式 ******/
+  color: #de4b46;
+}
+/* line 86, ../sass/_menu.scss */
+#menu .menu-left .menu-left-type:hover span {
+  color: #de4b46;
+}
+/* line 89, ../sass/_menu.scss */
+#menu .menu-left .menu-left-type:nth-child(1):hover .menu1-left-type-menu2 {
+  display: block;
+}
+/* line 93, ../sass/_menu.scss */
+#menu .menu-right {
+  /************************** 菜单模块的右边区域 *****************************/
+  width: 1200px;
+  height: 524px;
+  position: absolute;
+  z-index: 2;
+}
+/* line 98, ../sass/_menu.scss */
+#menu .menu-right .menu-right > li {
+  width: 1200px;
+  height: 524px;
+  float: left;
+}
+/* line 102, ../sass/_menu.scss */
+#menu .menu-right .menu-right > li img {
+  width: 1200px;
+  height: 524px;
+}
+
+/* line 1, ../sass/_jingxuan.scss */
+#jingxuan {
+  width: 1200px;
+  height: 827px;
+  margin: auto;
+}
+/* line 5, ../sass/_jingxuan.scss */
+#jingxuan .jingxuan-top {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 12, ../sass/_jingxuan.scss */
+#jingxuan .jingxuan-top p {
+  font-size: 22px !important;
+}
+/* line 16, ../sass/_jingxuan.scss */
+#jingxuan .jingxuan-list {
+  width: 100%;
+  height: 767px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* line 22, ../sass/_jingxuan.scss */
+#jingxuan .jingxuan-list .jingxuan-list-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 9px;
+}
+/* line 27, ../sass/_jingxuan.scss */
+#jingxuan .jingxuan-list .jingxuan-list-1 a:nth-child(1) {
+  width: 796px;
+  height: 364px;
+  margin-right: 10px;
+}
+/* line 32, ../sass/_jingxuan.scss */
+#jingxuan .jingxuan-list .jingxuan-list-1 a:nth-child(2) {
+  width: 394px;
+  height: 364px;
+  background: #fdfaf8;
+}
+/* line 38, ../sass/_jingxuan.scss */
+#jingxuan .jingxuan-list .jingxuan-list-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 42, ../sass/_jingxuan.scss */
+#jingxuan .jingxuan-list .jingxuan-list-2 a:nth-child(1) {
+  width: 394px;
+  height: 394px;
+  margin-right: 9px;
+  overflow: hidden;
+}
+/* line 48, ../sass/_jingxuan.scss */
+#jingxuan .jingxuan-list .jingxuan-list-2 a:nth-child(2) {
+  width: 394px;
+  height: 394px;
+  margin-right: 9px;
+  overflow: hidden;
+}
+/* line 54, ../sass/_jingxuan.scss */
+#jingxuan .jingxuan-list .jingxuan-list-2 a:nth-child(3) {
+  width: 394px;
+  height: 394px;
+  overflow: hidden;
+}
+/* line 59, ../sass/_jingxuan.scss */
+#jingxuan .jingxuan-list .jingxuan-list-2 img {
+  width: 394px;
+  height: 394px;
+}
+/* line 63, ../sass/_jingxuan.scss */
+#jingxuan .jingxuan-list .jingxuan-list-2 img:hover {
+  transition: all 1s;
+  transform: scale(1.1);
+}
+
+/* line 1, ../sass/_xinping.scss */
+#xinping {
+  width: 1200px;
+  height: 408px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* line 9, ../sass/_xinping.scss */
+#xinping .xinping-top {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 16, ../sass/_xinping.scss */
+#xinping .xinping-top span:nth-child(1) {
+  height: 20px;
+  font-size: 22px !important;
+}
+/* line 21, ../sass/_xinping.scss */
+#xinping .xinping-top span:nth-child(2) a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+}
+/* line 28, ../sass/_xinping.scss */
+#xinping .xingping-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 33, ../sass/_xinping.scss */
+#xinping .xingping-list li {
+  width: 240px;
+  height: 348px;
+  margin-right: 6px;
+}
+/* line 37, ../sass/_xinping.scss */
+#xinping .xingping-list li a {
+  text-decoration: none;
+}
+/* line 40, ../sass/_xinping.scss */
+#xinping .xingping-list li img {
+  width: 185.594px;
+  height: 185.594px;
+  margin: 23.203px;
+}
+/* line 45, ../sass/_xinping.scss */
+#xinping .xingping-list li p {
+  width: 185.594px;
+  height: 106px;
+  margin-left: 23.203px;
+  margin-right: 23.203px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+/* line 55, ../sass/_xinping.scss */
+#xinping .xingping-list li p span:nth-child(1) {
+  margin-bottom: 10px;
+  color: #333;
+}
+/* line 59, ../sass/_xinping.scss */
+#xinping .xingping-list li p span:nth-child(2) {
+  color: #db3832;
+}
+
+/* line 1, ../sass/_shengxian.scss */
+#shengxian {
+  width: 1200px;
+  height: 1158px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* line 9, ../sass/_shengxian.scss */
+#shengxian .shengxian-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+/* line 16, ../sass/_shengxian.scss */
+#shengxian .shengxian-top p:nth-child(1) {
+  font-size: 22px !important;
+}
+/* line 19, ../sass/_shengxian.scss */
+#shengxian .shengxian-top p:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 24, ../sass/_shengxian.scss */
+#shengxian .shengxian-top p:nth-child(2) span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* line 28, ../sass/_shengxian.scss */
+#shengxian .shengxian-top p:nth-child(2) span:nth-child(11) {
+  margin-left: 25px;
+}
+/* line 31, ../sass/_shengxian.scss */
+#shengxian .shengxian-top p:nth-child(2) a {
+  text-decoration: none;
+  color: #333;
+}
+/* line 37, ../sass/_shengxian.scss */
+#shengxian .shengxianMenu {
+  width: 1200px;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 43, ../sass/_shengxian.scss */
+#shengxian .shengxianMenu .shengxianMenu-left {
+  width: 262px;
+  height: 100%;
+  background: #fcf7ef;
+  margin-right: 8px;
+  padding: 0 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 53, ../sass/_shengxian.scss */
+#shengxian .shengxianMenu .shengxianMenu-left p {
+  width: 218px;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* line 63, ../sass/_shengxian.scss */
+#shengxian .shengxianMenu .shengxianMenu-left .menu-title {
+  font-size: 30px;
+}
+/* line 66, ../sass/_shengxian.scss */
+#shengxian .shengxianMenu .shengxianMenu-left div {
+  width: 218px;
+  height: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 74, ../sass/_shengxian.scss */
+#shengxian .shengxianMenu .shengxianMenu-left .menu-list-1 {
+  width: 109px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+}
+/* line 83, ../sass/_shengxian.scss */
+#shengxian .shengxianMenu .shengxianMenu-left .menu-list-1 a {
+  width: 100px;
+  height: 29px;
+  background: #ddbd6e;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 29px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+/* line 94, ../sass/_shengxian.scss */
+#shengxian .shengxianMenu .shengxianMenu-left .menu-list-1 a:hover {
+  opacity: 1;
+}
+/* line 97, ../sass/_shengxian.scss */
+#shengxian .shengxianMenu .shengxianMenu-left .menu-list-2 {
+  width: 109px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* line 105, ../sass/_shengxian.scss */
+#shengxian .shengxianMenu .shengxianMenu-left .menu-list-2 a {
+  width: 100px;
+  height: 29px;
+  background: #ddbd6e;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 29px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+/* line 116, ../sass/_shengxian.scss */
+#shengxian .shengxianMenu .shengxianMenu-left .menu-list-2 a:hover {
+  opacity: 1;
+}
+/* line 120, ../sass/_shengxian.scss */
+#shengxian .shengxianMenu img {
+  width: 930px;
+  height: 320px;
+}
+/* line 125, ../sass/_shengxian.scss */
+#shengxian .shengxianList-1, #shengxian .shengxianList-2 {
+  width: 100%;
+  height: 317px;
+  margin-top: 62px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 132, ../sass/_shengxian.scss */
+#shengxian .shengxianList-1 li:hover, #shengxian .shengxianList-2 li:hover {
+  box-shadow: 0 0 5px 3px #F4F4F4;
+}
+/* line 136, ../sass/_shengxian.scss */
+#shengxian .shengxianList-1 li, #shengxian .shengxianList-2 li {
+  width: 194px;
+  height: 317px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 6px;
+}
+/* line 143, ../sass/_shengxian.scss */
+#shengxian .shengxianList-1 li img, #shengxian .shengxianList-2 li img {
+  width: 156.797px;
+  height: 156.797px;
+  margin: 22px 18.609px 0 18.594px;
+}
+/* line 148, ../sass/_shengxian.scss */
+#shengxian .shengxianList-1 li p, #shengxian .shengxianList-2 li p {
+  width: 182px;
+  height: 56px;
+  margin: 16px 0 50px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* line 1, ../sass/_meishi.scss */
+#meishi {
+  width: 1200px;
+  height: 1158px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* line 9, ../sass/_meishi.scss */
+#meishi .meishi-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+/* line 16, ../sass/_meishi.scss */
+#meishi .meishi-top p:nth-child(1) {
+  font-size: 22px !important;
+}
+/* line 19, ../sass/_meishi.scss */
+#meishi .meishi-top p:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 24, ../sass/_meishi.scss */
+#meishi .meishi-top p:nth-child(2) span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* line 28, ../sass/_meishi.scss */
+#meishi .meishi-top p:nth-child(2) span:nth-child(11) {
+  margin-left: 25px;
+}
+/* line 31, ../sass/_meishi.scss */
+#meishi .meishi-top p:nth-child(2) a {
+  text-decoration: none;
+  color: #333;
+}
+/* line 37, ../sass/_meishi.scss */
+#meishi .meishiMenu {
+  width: 1200px;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 43, ../sass/_meishi.scss */
+#meishi .meishiMenu .meishiMenu-left {
+  width: 262px;
+  height: 100%;
+  background: #f0ecf8;
+  margin-right: 8px;
+  padding: 0 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 53, ../sass/_meishi.scss */
+#meishi .meishiMenu .meishiMenu-left p {
+  width: 218px;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* line 63, ../sass/_meishi.scss */
+#meishi .meishiMenu .meishiMenu-left .menu-title {
+  font-size: 30px;
+}
+/* line 66, ../sass/_meishi.scss */
+#meishi .meishiMenu .meishiMenu-left div {
+  width: 218px;
+  height: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 74, ../sass/_meishi.scss */
+#meishi .meishiMenu .meishiMenu-left .menu-list-1 {
+  width: 109px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+}
+/* line 83, ../sass/_meishi.scss */
+#meishi .meishiMenu .meishiMenu-left .menu-list-1 a {
+  width: 100px;
+  height: 29px;
+  background: #7b5fcb;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 29px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+/* line 94, ../sass/_meishi.scss */
+#meishi .meishiMenu .meishiMenu-left .menu-list-1 a:hover {
+  opacity: 1;
+}
+/* line 97, ../sass/_meishi.scss */
+#meishi .meishiMenu .meishiMenu-left .menu-list-2 {
+  width: 109px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* line 105, ../sass/_meishi.scss */
+#meishi .meishiMenu .meishiMenu-left .menu-list-2 a {
+  width: 100px;
+  height: 29px;
+  background: #7b5fcb;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 29px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+/* line 116, ../sass/_meishi.scss */
+#meishi .meishiMenu .meishiMenu-left .menu-list-2 a:hover {
+  opacity: 1;
+}
+/* line 120, ../sass/_meishi.scss */
+#meishi .meishiMenu img {
+  width: 930px;
+  height: 320px;
+}
+/* line 133, ../sass/_meishi.scss */
+#meishi .meishiList_box {
+  width: 100%;
+  height: 634px;
+}
+/* line 137, ../sass/_meishi.scss */
+#meishi .meishiList {
+  width: 100%;
+  height: 634px;
+}
+/* line 140, ../sass/_meishi.scss */
+#meishi .meishiList li:hover {
+  box-shadow: 0 0 5px 3px #F4F4F4;
+}
+/* line 144, ../sass/_meishi.scss */
+#meishi .meishiList li {
+  float: left;
+  width: 194px;
+  height: 317px;
+  margin-top: 62px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-right: 6px;
+}
+/* line 154, ../sass/_meishi.scss */
+#meishi .meishiList li a {
+  display: block;
+  width: 194px;
+  height: 317px;
+}
+/* line 159, ../sass/_meishi.scss */
+#meishi .meishiList li img {
+  width: 156.797px;
+  height: 156.797px;
+  margin: 22px 18.609px 0 18.594px;
+}
+/* line 164, ../sass/_meishi.scss */
+#meishi .meishiList li p {
+  width: 182px;
+  height: 56px;
+  margin: 16px 0 50px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* line 1, ../sass/_meijiu.scss */
+#meijiu {
+  width: 1200px;
+  height: 1158px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* line 9, ../sass/_meijiu.scss */
+#meijiu .meijiu-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+/* line 16, ../sass/_meijiu.scss */
+#meijiu .meijiu-top p:nth-child(1) {
+  font-size: 22px !important;
+}
+/* line 19, ../sass/_meijiu.scss */
+#meijiu .meijiu-top p:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 24, ../sass/_meijiu.scss */
+#meijiu .meijiu-top p:nth-child(2) span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* line 28, ../sass/_meijiu.scss */
+#meijiu .meijiu-top p:nth-child(2) span:nth-child(11) {
+  margin-left: 25px;
+}
+/* line 31, ../sass/_meijiu.scss */
+#meijiu .meijiu-top p:nth-child(2) a {
+  text-decoration: none;
+  color: #333;
+}
+/* line 37, ../sass/_meijiu.scss */
+#meijiu .meijiuMenu {
+  width: 1200px;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 43, ../sass/_meijiu.scss */
+#meijiu .meijiuMenu .meijiuMenu-left {
+  width: 262px;
+  height: 100%;
+  background: #f8f0f0;
+  margin-right: 8px;
+  padding: 0 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 53, ../sass/_meijiu.scss */
+#meijiu .meijiuMenu .meijiuMenu-left p {
+  width: 218px;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* line 63, ../sass/_meijiu.scss */
+#meijiu .meijiuMenu .meijiuMenu-left .menu-title {
+  font-size: 30px;
+}
+/* line 66, ../sass/_meijiu.scss */
+#meijiu .meijiuMenu .meijiuMenu-left div {
+  width: 218px;
+  height: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 74, ../sass/_meijiu.scss */
+#meijiu .meijiuMenu .meijiuMenu-left .menu-list-1 {
+  width: 109px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+}
+/* line 83, ../sass/_meijiu.scss */
+#meijiu .meijiuMenu .meijiuMenu-left .menu-list-1 a {
+  width: 100px;
+  height: 29px;
+  background: #e86767;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 29px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+/* line 94, ../sass/_meijiu.scss */
+#meijiu .meijiuMenu .meijiuMenu-left .menu-list-1 a:hover {
+  opacity: 1;
+}
+/* line 97, ../sass/_meijiu.scss */
+#meijiu .meijiuMenu .meijiuMenu-left .menu-list-2 {
+  width: 109px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* line 105, ../sass/_meijiu.scss */
+#meijiu .meijiuMenu .meijiuMenu-left .menu-list-2 a {
+  width: 100px;
+  height: 29px;
+  background: #e86767;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 29px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+/* line 116, ../sass/_meijiu.scss */
+#meijiu .meijiuMenu .meijiuMenu-left .menu-list-2 a:hover {
+  opacity: 1;
+}
+/* line 119, ../sass/_meijiu.scss */
+#meijiu .meijiuMenu .meijiuMenu-left .menu-list-2 a:nth-child(5) {
+  opacity: 0;
+  pointer-events: none;
+}
+/* line 124, ../sass/_meijiu.scss */
+#meijiu .meijiuMenu img {
+  width: 930px;
+  height: 320px;
+}
+/* line 129, ../sass/_meijiu.scss */
+#meijiu .meijiuList-1, #meijiu .meijiuList-2 {
+  width: 100%;
+  height: 317px;
+  margin-top: 62px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 136, ../sass/_meijiu.scss */
+#meijiu .meijiuList-1 li:hover, #meijiu .meijiuList-2 li:hover {
+  box-shadow: 0 0 5px 3px #F4F4F4;
+}
+/* line 140, ../sass/_meijiu.scss */
+#meijiu .meijiuList-1 li, #meijiu .meijiuList-2 li {
+  width: 194px;
+  height: 317px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 6px;
+}
+/* line 147, ../sass/_meijiu.scss */
+#meijiu .meijiuList-1 li img, #meijiu .meijiuList-2 li img {
+  width: 156.797px;
+  height: 156.797px;
+  margin: 22px 18.609px 0 18.594px;
+}
+/* line 152, ../sass/_meijiu.scss */
+#meijiu .meijiuList-1 li p, #meijiu .meijiuList-2 li p {
+  width: 182px;
+  height: 56px;
+  margin: 16px 0 50px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* line 1, ../sass/_muying.scss */
+#muying {
+  width: 1200px;
+  height: 1158px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* line 9, ../sass/_muying.scss */
+#muying .muying-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+/* line 16, ../sass/_muying.scss */
+#muying .muying-top p:nth-child(1) {
+  font-size: 22px !important;
+}
+/* line 19, ../sass/_muying.scss */
+#muying .muying-top p:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 24, ../sass/_muying.scss */
+#muying .muying-top p:nth-child(2) span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* line 28, ../sass/_muying.scss */
+#muying .muying-top p:nth-child(2) span:nth-child(11) {
+  margin-left: 25px;
+}
+/* line 31, ../sass/_muying.scss */
+#muying .muying-top p:nth-child(2) a {
+  text-decoration: none;
+  color: #333;
+}
+/* line 37, ../sass/_muying.scss */
+#muying .muyingMenu {
+  width: 1200px;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 43, ../sass/_muying.scss */
+#muying .muyingMenu .muyingMenu-left {
+  width: 262px;
+  height: 100%;
+  background: #f8f0f0;
+  margin-right: 8px;
+  padding: 0 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 53, ../sass/_muying.scss */
+#muying .muyingMenu .muyingMenu-left p {
+  width: 218px;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* line 63, ../sass/_muying.scss */
+#muying .muyingMenu .muyingMenu-left .menu-title {
+  font-size: 30px;
+}
+/* line 66, ../sass/_muying.scss */
+#muying .muyingMenu .muyingMenu-left div {
+  width: 218px;
+  height: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 74, ../sass/_muying.scss */
+#muying .muyingMenu .muyingMenu-left .menu-list-1 {
+  width: 109px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+}
+/* line 83, ../sass/_muying.scss */
+#muying .muyingMenu .muyingMenu-left .menu-list-1 a {
+  width: 100px;
+  height: 29px;
+  background: #e86767;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 29px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+/* line 94, ../sass/_muying.scss */
+#muying .muyingMenu .muyingMenu-left .menu-list-1 a:hover {
+  opacity: 1;
+}
+/* line 97, ../sass/_muying.scss */
+#muying .muyingMenu .muyingMenu-left .menu-list-1 a:nth-child(4), #muying .muyingMenu .muyingMenu-left .menu-list-1 a:nth-child(5) {
+  opacity: 0;
+  pointer-events: none;
+}
+/* line 101, ../sass/_muying.scss */
+#muying .muyingMenu .muyingMenu-left .menu-list-2 {
+  width: 109px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* line 109, ../sass/_muying.scss */
+#muying .muyingMenu .muyingMenu-left .menu-list-2 a {
+  width: 100px;
+  height: 29px;
+  background: #e86767;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 29px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+/* line 120, ../sass/_muying.scss */
+#muying .muyingMenu .muyingMenu-left .menu-list-2 a:hover {
+  opacity: 1;
+}
+/* line 123, ../sass/_muying.scss */
+#muying .muyingMenu .muyingMenu-left .menu-list-2 a:nth-child(4), #muying .muyingMenu .muyingMenu-left .menu-list-2 a:nth-child(5) {
+  opacity: 0;
+  pointer-events: none;
+}
+/* line 128, ../sass/_muying.scss */
+#muying .muyingMenu img {
+  width: 930px;
+  height: 320px;
+}
+/* line 133, ../sass/_muying.scss */
+#muying .muyingList-1, #muying .muyingList-2 {
+  width: 100%;
+  height: 317px;
+  margin-top: 62px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 140, ../sass/_muying.scss */
+#muying .muyingList-1 li:hover, #muying .muyingList-2 li:hover {
+  box-shadow: 0 0 5px 3px #F4F4F4;
+}
+/* line 144, ../sass/_muying.scss */
+#muying .muyingList-1 li, #muying .muyingList-2 li {
+  width: 194px;
+  height: 317px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 6px;
+}
+/* line 151, ../sass/_muying.scss */
+#muying .muyingList-1 li img, #muying .muyingList-2 li img {
+  width: 156.797px;
+  height: 156.797px;
+  margin: 22px 18.609px 0 18.594px;
+}
+/* line 156, ../sass/_muying.scss */
+#muying .muyingList-1 li p, #muying .muyingList-2 li p {
+  width: 182px;
+  height: 56px;
+  margin: 16px 0 50px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* line 1, ../sass/_lingshi.scss */
+#lingshi {
+  width: 1200px;
+  height: 1158px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* line 9, ../sass/_lingshi.scss */
+#lingshi .lingshi-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+/* line 16, ../sass/_lingshi.scss */
+#lingshi .lingshi-top p:nth-child(1) {
+  font-size: 22px !important;
+}
+/* line 19, ../sass/_lingshi.scss */
+#lingshi .lingshi-top p:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 24, ../sass/_lingshi.scss */
+#lingshi .lingshi-top p:nth-child(2) span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* line 28, ../sass/_lingshi.scss */
+#lingshi .lingshi-top p:nth-child(2) span:nth-child(11) {
+  margin-left: 25px;
+}
+/* line 31, ../sass/_lingshi.scss */
+#lingshi .lingshi-top p:nth-child(2) a {
+  text-decoration: none;
+  color: #333;
+}
+/* line 37, ../sass/_lingshi.scss */
+#lingshi .lingshiMenu {
+  width: 1200px;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 43, ../sass/_lingshi.scss */
+#lingshi .lingshiMenu .lingshiMenu-left {
+  width: 262px;
+  height: 100%;
+  background: #f4f8f0;
+  margin-right: 8px;
+  padding: 0 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 53, ../sass/_lingshi.scss */
+#lingshi .lingshiMenu .lingshiMenu-left p {
+  width: 218px;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* line 63, ../sass/_lingshi.scss */
+#lingshi .lingshiMenu .lingshiMenu-left .menu-title {
+  font-size: 30px;
+}
+/* line 66, ../sass/_lingshi.scss */
+#lingshi .lingshiMenu .lingshiMenu-left div {
+  width: 218px;
+  height: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 74, ../sass/_lingshi.scss */
+#lingshi .lingshiMenu .lingshiMenu-left .menu-list-1 {
+  width: 109px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+}
+/* line 83, ../sass/_lingshi.scss */
+#lingshi .lingshiMenu .lingshiMenu-left .menu-list-1 a {
+  width: 100px;
+  height: 29px;
+  background: #82c266;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 29px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+/* line 94, ../sass/_lingshi.scss */
+#lingshi .lingshiMenu .lingshiMenu-left .menu-list-1 a:hover {
+  opacity: 1;
+}
+/* line 97, ../sass/_lingshi.scss */
+#lingshi .lingshiMenu .lingshiMenu-left .menu-list-2 {
+  width: 109px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* line 105, ../sass/_lingshi.scss */
+#lingshi .lingshiMenu .lingshiMenu-left .menu-list-2 a {
+  width: 100px;
+  height: 29px;
+  background: #82c266;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 29px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+/* line 116, ../sass/_lingshi.scss */
+#lingshi .lingshiMenu .lingshiMenu-left .menu-list-2 a:hover {
+  opacity: 1;
+}
+/* line 120, ../sass/_lingshi.scss */
+#lingshi .lingshiMenu img {
+  width: 930px;
+  height: 320px;
+}
+/* line 125, ../sass/_lingshi.scss */
+#lingshi .lingshiList-1, #lingshi .lingshiList-2 {
+  width: 100%;
+  height: 317px;
+  margin-top: 62px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 132, ../sass/_lingshi.scss */
+#lingshi .lingshiList-1 li:hover, #lingshi .lingshiList-2 li:hover {
+  box-shadow: 0 0 5px 3px #F4F4F4;
+}
+/* line 136, ../sass/_lingshi.scss */
+#lingshi .lingshiList-1 li, #lingshi .lingshiList-2 li {
+  width: 194px;
+  height: 317px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 6px;
+}
+/* line 143, ../sass/_lingshi.scss */
+#lingshi .lingshiList-1 li img, #lingshi .lingshiList-2 li img {
+  width: 156.797px;
+  height: 156.797px;
+  margin: 22px 18.609px 0 18.594px;
+}
+/* line 148, ../sass/_lingshi.scss */
+#lingshi .lingshiList-1 li p, #lingshi .lingshiList-2 li p {
+  width: 182px;
+  height: 56px;
+  margin: 16px 0 50px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* line 1, ../sass/_baihuo.scss */
+#baihuo {
+  width: 1200px;
+  height: 1158px;
+  margin: auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* line 10, ../sass/_baihuo.scss */
+#baihuo .baihuo-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+/* line 17, ../sass/_baihuo.scss */
+#baihuo .baihuo-top p:nth-child(1) {
+  font-size: 22px !important;
+}
+/* line 20, ../sass/_baihuo.scss */
+#baihuo .baihuo-top p:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 25, ../sass/_baihuo.scss */
+#baihuo .baihuo-top p:nth-child(2) span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* line 29, ../sass/_baihuo.scss */
+#baihuo .baihuo-top p:nth-child(2) span:nth-child(11) {
+  margin-left: 25px;
+}
+/* line 32, ../sass/_baihuo.scss */
+#baihuo .baihuo-top p:nth-child(2) a {
+  text-decoration: none;
+  color: #333;
+}
+/* line 38, ../sass/_baihuo.scss */
+#baihuo .baihuoMenu {
+  width: 1200px;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 44, ../sass/_baihuo.scss */
+#baihuo .baihuoMenu .baihuoMenu-left {
+  width: 262px;
+  height: 320px;
+  background: #f8f2ec;
+  margin-right: 8px;
+  padding: 0 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 54, ../sass/_baihuo.scss */
+#baihuo .baihuoMenu .baihuoMenu-left p {
+  width: 218px;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* line 64, ../sass/_baihuo.scss */
+#baihuo .baihuoMenu .baihuoMenu-left .menu-title {
+  font-size: 30px;
+}
+/* line 67, ../sass/_baihuo.scss */
+#baihuo .baihuoMenu .baihuoMenu-left div {
+  width: 218px;
+  height: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 75, ../sass/_baihuo.scss */
+#baihuo .baihuoMenu .baihuoMenu-left .menu-list-1 {
+  width: 109px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+}
+/* line 84, ../sass/_baihuo.scss */
+#baihuo .baihuoMenu .baihuoMenu-left .menu-list-1 a {
+  width: 100px;
+  height: 29px;
+  background: #d4b16c;
+  opacity: 0.8;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 29px;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 95, ../sass/_baihuo.scss */
+#baihuo .baihuoMenu .baihuoMenu-left .menu-list-1 a:hover {
+  opacity: 1;
+}
+/* line 98, ../sass/_baihuo.scss */
+#baihuo .baihuoMenu .baihuoMenu-left .menu-list-2 {
+  width: 109px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* line 106, ../sass/_baihuo.scss */
+#baihuo .baihuoMenu .baihuoMenu-left .menu-list-2 a {
+  width: 100px;
+  height: 29px;
+  background: #d4b16c;
+  opacity: 0.8;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 29px;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 117, ../sass/_baihuo.scss */
+#baihuo .baihuoMenu .baihuoMenu-left .menu-list-2 a:hover {
+  opacity: 1;
+}
+/* line 121, ../sass/_baihuo.scss */
+#baihuo .baihuoMenu img {
+  width: 930px;
+  height: 320px;
+}
+/* line 126, ../sass/_baihuo.scss */
+#baihuo .baihuoList-1, #baihuo .baihuoList-2 {
+  width: 100%;
+  height: 317px;
+  margin-top: 62px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 134, ../sass/_baihuo.scss */
+#baihuo .baihuoList-1 li:hover, #baihuo .baihuoList-2 li:hover {
+  box-shadow: 0 0 5px 3px #F4F4F4;
+}
+/* line 138, ../sass/_baihuo.scss */
+#baihuo .baihuoList-1 li, #baihuo .baihuoList-2 li {
+  width: 194px;
+  height: 317px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 6px;
+  background: #fff;
+}
+/* line 146, ../sass/_baihuo.scss */
+#baihuo .baihuoList-1 li img, #baihuo .baihuoList-2 li img {
+  width: 156.797px;
+  height: 156.797px;
+  margin: 22px 18.609px 0 18.594px;
+}
+/* line 151, ../sass/_baihuo.scss */
+#baihuo .baihuoList-1 li p, #baihuo .baihuoList-2 li p {
+  width: 182px;
+  height: 56px;
+  margin: 16px 0 50px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* line 1, ../sass/_footer.scss */
+#footer {
+  width: 100%;
+  height: 508px;
+  margin: auto;
+  background: #f4f5f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 10, ../sass/_footer.scss */
+#footer .footer-main {
+  width: 1200px;
+  height: 274px;
+  margin: 35px 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* line 18, ../sass/_footer.scss */
+#footer .footer-main ul {
+  width: 220px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* line 25, ../sass/_footer.scss */
+#footer .footer-main ul li {
+  width: 100%;
+  height: 30px;
+}
+/* line 31, ../sass/_footer.scss */
+#footer .information {
+  width: 1200px;
+  height: 169px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 38, ../sass/_footer.scss */
+#footer .information p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 44, ../sass/_footer.scss */
+#footer .information p:nth-child(1) {
+  margin-bottom: 20px;
+}
+/* line 46, ../sass/_footer.scss */
+#footer .information p:nth-child(1) span {
+  margin: 0 10px;
+  color: #333;
+}
+/* line 50, ../sass/_footer.scss */
+#footer .information p:nth-child(1) a {
+  text-decoration: none;
+  color: #333;
+}
+/* line 56, ../sass/_footer.scss */
+#footer .information p:nth-child(2) span, #footer .information p:nth-child(3) span, #footer .information p:nth-child(4) span {
+  margin: 0 10px;
+  color: #bfbfbf;
+}
+/* line 60, ../sass/_footer.scss */
+#footer .information p:nth-child(2) a, #footer .information p:nth-child(3) a, #footer .information p:nth-child(4) a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+/* line 65, ../sass/_footer.scss */
+#footer .information p:nth-child(5), #footer .information p:nth-child(6) {
+  margin: 0 10px;
+  color: #bfbfbf;
+}
+
+/* line 1, ../sass/_louti.scss */
+#louti {
+  width: 50px;
+  height: 430px;
+  background: #ddd8d8;
+  position: fixed;
+  left: 97.5%;
+  top: 100px;
+}
+/* line 8, ../sass/_louti.scss */
+#louti li {
+  width: 100%;
+  height: 53.75px;
+  display: flex;
+  position: relative;
+}
+/* line 13, ../sass/_louti.scss */
+#louti li span {
+  margin: auto;
+  font-size: 25px;
+  color: #666;
+}
+/* line 18, ../sass/_louti.scss */
+#louti li p {
+  margin: auto;
+  width: 110px;
+  height: 100%;
+  background: #db3832;
+  position: absolute;
+  left: -110px;
+  color: #fff;
+  display: none;
+  border-radius: 4px 0 0 4px;
+}
+/* line 30, ../sass/_louti.scss */
+#louti .louti_click {
+  /* 鼠标点击加上类，改变样式*/
+  background: #db3832;
+}
+/* line 33, ../sass/_louti.scss */
+#louti .louti_click span {
+  /* 鼠标点击加上类，改变样式*/
+  color: #fff;
+}
+/* line 36, ../sass/_louti.scss */
+#louti li:hover span {
+  color: #fff;
+}
+/* line 39, ../sass/_louti.scss */
+#louti li:hover {
+  background: #db3832;
+}
+/* line 42, ../sass/_louti.scss */
+#louti li:hover p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

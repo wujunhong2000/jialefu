@@ -1,0 +1,173 @@
+#login-top{
+    width: 100%;
+    height: 108px;
+    background: #fff;
+    position: relative;
+    display: flex;
+}
+.login-top-center{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+.login-top-center-left{
+    float: left;
+    margin-top: 44px;
+    margin-left: 200px;
+}
+.login-top-center-left p:nth-child(1){
+    color: #db3832;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.login-top-center-left p:nth-child(2){
+    color: #666;
+}
+.login-top-center-right{
+    float: right;
+    margin-top: 70px;
+}
+.login-top-center-right a:nth-child(1){
+    text-decoration: none;
+    margin-right: 100px;
+    color: #666;
+}
+.login-top-center-right a:nth-child(2){
+    text-decoration: none;
+    margin-right: 100px;
+    color: #666;
+}
+.login-logo{
+    width: 210px;
+    height: 239px;
+    background: #fff;
+    position: absolute;
+    left: 300px;
+    top: 80px;
+    display: flex;
+    box-shadow:0 0 5px 3px rgb(209, 206, 206);
+    z-index: 2;
+}
+.login-logo>a{
+    margin: auto;
+}
+#login-main{
+    width: 100%;
+    height: 657px;
+    background: url(https://www.carrefour.cn/images/banner_login2.png);
+    position: relative;
+}
+.login-tianxiekuang{
+    width: 490px;
+    height: 590px;
+    background: #fff;
+    position: absolute;
+    top: 40px;
+    left: 1030px;
+    border-radius: 6px;
+}
+.login-tianxiekuang-top{
+    width: 100%;
+    height: 112px;
+    display: flex;
+    border-bottom: 1px solid rgb(224, 219, 219);
+}
+.login-tianxiekuang-top>p{
+    margin: auto;
+    color: #004ea2;
+    font-size: 26px;
+    font-weight: 600;
+}
+.login-tianxiekuang-center{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.login-tianxiekuang-center>div{
+    width:448px;
+    height:52px;
+    display: flex;
+}
+.login-tianxiekuang-center .login-huakuai{
+    width:448px;
+    height:52px;
+    border: 1px solid rgb(224, 219, 219);
+    position: relative;
+    margin-bottom: 14px;
+}
+.login-tianxiekuang-center .login-huakuai p{
+    margin-top: 18px;
+    margin-left: 150px;
+    color: rgb(131, 129, 129);
+}
+.login-tianxiekuang-center .login-huakuai .login-huakuai-small{
+    width: 82px;
+    height: 52px;
+    background: #4ab32d;
+    position: absolute;
+    display: flex;
+    cursor: move;
+}
+.login-tianxiekuang-center .login-huakuai .login-huakuai-small p{
+    margin: auto;
+    font-size: 20px;
+    color: #fff;
+}
+.login-tianxiekuang-center>div>input:nth-child(1){
+    width:350px;
+    height:52px;
+    border: 1px solid rgb(224, 219, 219);
+}
+.login-tianxiekuang-center>div>input:nth-child(2){
+    width:98px;
+    height:56px;
+    background-color:transparent;
+    border: 1px solid rgb(224, 219, 219);
+    color: rgb(163, 159, 159);
+}
+
+.login-tianxiekuang-center>input{
+    width:448px;
+    height:52px;
+    border: 1px solid rgb(224, 219, 219);
+}
+.login-input_span{
+    height:14px;
+    width:448px;
+    font-size: 12px;
+}
+.login-username{
+    margin-left: 27px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgb(146, 140, 140);
+}
+.login-tianxiekuang-bottom{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.login-denglu{
+    width:448px;
+    height:52px;
+    background: #db3832;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+}
+.login-tianxiekuang-bottom>p{
+    padding: 0 22px;
+    font-size: 12px;
+}
+.login-tianxiekuang-bottom>p>a{
+    text-decoration: none;
+}
